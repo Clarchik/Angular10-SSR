@@ -1,6 +1,7 @@
 # Angular10SSR
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+Example is available on url: https://online-shop4.herokuapp.com/
 
 ## Development server
 

@@ -15,7 +15,7 @@
     "prerender": "ng run Angular10-SSR:prerender",
     "preinstall": "npm run clean",
     "postinstall": "npm run build:ssr",
-    "start:heroku": "node dist/server"
+    "start:heroku": "node dist/server/main.js"
   },
   "private": true,
   "dependencies": {

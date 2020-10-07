@@ -29,6 +29,11 @@ export function app(): express.Express {
         maxAge: '1y'
     }));
 
+    server.get('/api/users', (req, res) => {
+        const users = [{ id: 1, name: 'user' }, { id: 2, name: 'uuser' }];
+        res.status(200).send(users);
+    });
+
     // All regular routes use the Universal engine
     server.get('*', (req, res) => {
         res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });

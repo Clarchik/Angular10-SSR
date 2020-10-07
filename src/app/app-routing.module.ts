@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TestComponent } from './components/test/test.component';
@@ -16,10 +17,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {
-        initialNavigation: 'enabled',
-        preloadingStrategy: PreloadingOnDemandStategy
-    })],
+    imports: [
+        RouterModule.forRoot(routes, {
+            initialNavigation: 'enabled',
+            preloadingStrategy: PreloadingOnDemandStategy
+        }),
+        CommonModule
+    ],
     exports: [RouterModule],
     declarations: [TestComponent]
 })
